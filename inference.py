@@ -42,7 +42,7 @@ def run():
         print(f.read())
 
     # For now, let us set make bogus predictions
-    biological_brain_structure = numpy.eye(4, 2)
+    biological_brain_structure = numpy.ones((brain_microscopy_image.shape),dtype=np.uint8)
 
     # Save your output
     write_array_as_image_file(
